@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Etherparty | Test</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    </head>
+
+<body>
+
+    <div id="wrapper">
+
+    <nav class="navbar-default navbar-static-side" role="navigation">
+        <div class="sidebar-collapse">
+            <ul class="nav" id="side-menu">
+                <li class="nav-header">
+                    <div class="dropdown profile-element">
+                            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                            <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold">Whit Jack</strong>
+                             </span> <span class="text-muted text-xs block">Lead Developer <b class="caret"></b></span> </span> </a>
+                            <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                                <li><a href="#">Logout</a></li>
+                            </ul>
+                    </div>
+                    <div class="logo-element">
+                        EP
+                    </div>
+                </li>
+                <li>
+                    <a href="index.html"><i class="fa fa-tachometer"></i> <span class="nav-label">Dashboard</span></a>
+                </li>
+                <li>
+                    <a href="contracts.html"><i class="fa fa-file-text"></i> <span class="nav-label">Contracts</span> </a>
+                <li>
+                    <a href="tx.html"><i class="fa fa-tasks"></i> <span class="nav-label">Transactions</span> </a>
+                <li class="active">
+                    <a href="test.html"><i class="fa fa-briefcase"></i> <span class="nav-label">Test</span> </a>
+                </li>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+
+
+        <div id="page-wrapper" class="gray-bg">
+        <div class="row border-bottom">
+        <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                    <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
+            </div>
+        </nav>
+        </div>
+            <div class="row wrapper border-bottom white-bg page-heading">
+                <div class="col-lg-10">
+                    <h2>Test</h2>
+                </div>
+            </div>
+        <div class="wrapper wrapper-content animated fadeInRight">
+            <div class="row">
+                <div class="col-lg-3 col-lg-height fill container">
+                        <div class="ibox-content">
+                            <h3>Drag</h3>
+                            <div id="draggable" class="ui-widget-content" style="z-index: 950;">
+                                <p>If x</p>
+                            </div>
+                            <div id="draggable2" class="ui-widget-content" style="z-index: 950;">
+                                <p>then y</p>
+                            </div>
+                            <div id="draggable3" class="ui-widget-content" style="z-index: 950;">
+                                <p>except for 9</p>
+                            </div>
+                            <div id="draggable4" class="ui-widget-content" style="z-index: 950;">
+                                <p>do 7</p>
+                            </div>
+                            <div id="draggable5" class="ui-widget-content" style="z-index: 950;">
+                                <p>while false</p>
+                            </div>
+                    </div>
+                    </div>
+                <div class="col-lg-3 fill " style="z-index: 900">
+                    <div class="ibox-content fill ">
+                        <h3>Assemble</h3>
+                    </div>
+                </div>
+                <div class="col-lg-3 fill " style="z-index: 900">
+                    <div class="ibox-content fill ">
+                        <h3>Result</h3>
+                        <textarea disabled rows="10">
+                        </textarea>
+                    </div>
+                </div>
+                <div class="col-lg-3 fill " style="z-index: 900">
+                    <div class="ibox-content fill ">
+                        <h3>Run</h3>
+                        <br>
+                        <button>Let's go!</button>
+                    </div>
+                </div>
+
+
+                </div>
+            </div>
+        <div class="footer">
+            <div>
+                <strong>Copyright</strong> EtherParty &copy; 2015
+            </div>
+        </div>
+
+        </div>
+        </div>
+
+
+
+    <!-- Mainly scripts -->
+    <script src="js/jquery-2.1.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+    <!-- Custom and plugin javascript -->
+    <script src="js/inspinia.js"></script>
+    <script src="js/plugins/pace/pace.min.js"></script>
+   <script>
+  $(function() {
+    $( "#draggable" ).draggable({ snap: true });
+    $( "#draggable2" ).draggable({ snap: true });
+    $( "#draggable3" ).draggable({ snap: true });
+    $( "#draggable4" ).draggable({ snap: true });
+    $( "#draggable5" ).draggable({ snap: true });
+});
+  </script>
+
+
+</body>
+
+</html>

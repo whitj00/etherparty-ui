@@ -5,6 +5,17 @@
  *   version 2.0
  *
 */
+.ui-widget-content {
+    width: 150px;
+    height: 20px;
+    padding: 0.5em;
+    border: 2px solid #a1a1a1;
+    border-radius: 10px;
+}
+
+.fill{
+    height:242px;
+}
 h1,
 h2,
 h3,
