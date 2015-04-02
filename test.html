@@ -65,7 +65,7 @@
                     <h2>Test</h2>
                 </div>
             </div>
-        <div class="wrapper wrapper-content animated fadeInRight">
+        <div id="selectionbox" class="wrapper wrapper-content animated fadeInRight">
             <div class="row">
                 <div class="col-lg-3 col-lg-height fill container">
                         <div class="ibox-content">
@@ -77,7 +77,7 @@
                                 <p>then y</p>
                             </div>
                             <div id="draggable3" class="ui-widget-content" style="z-index: 950;">
-                                <p>except for 9</p>
+                                <p>except if  <input type="text" id="Textbox" name="Textbox" maxlength="4" size="4" /></p>
                             </div>
                             <div id="draggable4" class="ui-widget-content" style="z-index: 950;">
                                 <p>do 7</p>
@@ -135,7 +135,7 @@ code:
     <script src="js/plugins/pace/pace.min.js"></script>
    <script>
   $(function() {
-    $( "#draggable" ).draggable({ snap: true });
+    $( "#draggable" ).draggable({ snap: true }, {containment: "#selectionbox" });
     $( "#draggable2" ).draggable({ snap: true });
     $( "#draggable3" ).draggable({ snap: true });
     $( "#draggable4" ).draggable({ snap: true });
