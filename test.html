@@ -88,14 +88,14 @@
                     </div>
                     </div>
                 <div class="col-lg-3 fill " style="z-index: 900">
-                    <div class="ibox-content fill ">
+                    <div class="ibox-content fill " id="droppable">
                         <h3>Assemble</h3>
                     </div>
                 </div>
                 <div class="col-lg-3 fill " style="z-index: 900">
                     <div class="ibox-content fill ">
                         <h3>Result</h3>
-                        <textarea disabled rows="10">
+                        <textarea name="resultbox" id="resultbox"  rows="10">
 init:
 code:
 </textarea>
@@ -105,7 +105,7 @@ code:
                     <div class="ibox-content fill ">
                         <h3>Run</h3>
                         <br>
-                        <button>Let's go!</button>
+                        <button onclick="settext()">Let's go!</button>
                     </div>
                 </div>
 
@@ -140,9 +140,22 @@ code:
     $( "#draggable3" ).draggable({ snap: true });
     $( "#draggable4" ).draggable({ snap: true });
     $( "#draggable5" ).draggable({ snap: true });
+  $(function() {
+    $( "#draggable" ).draggable();
+    $( "#droppable" ).droppable({
+      drop: function( event, ui ) {
+        $( this )
+          settext()
+      }
+    });
+  });
 });
   </script>
-
+  <script>
+function settext() {
+    document.getElementsByName('resultbox')[0].value = "if x";
+      };
+</script>
 
 </body>
 
