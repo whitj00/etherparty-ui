@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<!--[if IE 9 ]>
+<html class="ie9">
+   <![endif]-->
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Etherparty</title>
+      <!-- Vendor CSS -->
+      <link href="vendors/animate-css/animate.min.css" rel="stylesheet">
+       <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+      <!-- CSS -->
+      <link href="css/app.min.css" rel="stylesheet">
+      <!-- Following CSS codes are used only fore demo purposes thus you can remove anytime -->
+      <style type="text/css">
+         .dropdown-basic-demo {
+         display: inline-block;
+         margin: 0 15px 20px 0;
+         }
+         .dropdown-basic-demo .dropdown-menu {
+         display: block;
+         position: relative;
+         transform: scale(1);
+         opacity: 1;
+         filter: alpha(opacity=1);
+         z-index: 0;
+         }
+         .dropdown-btn-demo .dropdown, .dropdown-btn-demo .btn-group, .btn-demo .btn {
+         display: inline-block;
+         margin: 0 5px 7px 0;
+         }
+         .modal-preview-demo .modal {
+         position: relative; 
+         display: block; 
+         z-index: 0; 
+         background: rgba(0,0,0,0.1);
+         }
+         .margin-bottom > *{
+         margin-bottom: 20px;
+         }
+         .popover-demo .popover {
+         position: relative;
+         display: inline-block;
+         opacity: 1;
+         margin: 0 10px 30px;
+         z-index: 0;
+         }
+      </style>
+   </head>
+   <body>
+      <header id="header">
+         <ul class="header-inner">
+            <li id="menu-trigger" data-trigger="#sidebar">
+               <div class="line-wrap">
+                  <div class="line top"></div>
+                  <div class="line center"></div>
+                  <div class="line bottom"></div>
+               </div>
+            </li>
+            <li class="logo hidden-xs">
+               <img src="img/logo.png">
+            </li>
+            <li class="pull-right">
+               <ul class="top-menu">
+                  <li id="toggle-width">
+                     <div class="toggle-switch">
+                        <input id="tw-switch" type="checkbox" hidden="hidden">
+                        <label for="tw-switch" class="ts-helper"></label>
+                     </div>
+                  </li>
+                  <li id="top-search">
+                     <a class="tm-search" href=""></a>
+                  </li>
+                  <li class="hidden-xs" id="chat-trigger" data-trigger="#chat">
+                     <a class="tm-chat" href=""></a>
+                  </li>
+               </ul>
+            </li>
+         </ul>
+         <!-- Top Search Content -->
+         <div id="top-search-wrap">
+            <input type="text">
+            <i id="top-search-close">&times;</i>
+         </div>
+      </header>
+      <section id="main">
+         <aside id="sidebar">
+            <div class="sidebar-inner">
+               <div class="si-inner">
+                  <div class="profile-menu">
+                            <a href="">
+                                <div class="profile-pic">
+                                    <h4 style="color:#fff; font-family: 'Montserrat', sans-serif; text-transform: uppercase; font-size:
+                                            12px;">Account <br></h4> 
+                                   <p style=" color: #8890AD; font-size: 10px;">3J98t1WpEZ73CNmQviecrnyiWrnqRhWNLy</p>
+                                </div>
+                                
+                                <div class="profile-info">
+                                    Account Actions
+                                    
+                                    <i class="md md-arrow-drop-down"></i>
+                                </div>
+                            </a>
+                            
+                            <ul class="main-menu">
+                                <li>
+                                    <a href=""><i class="md md-person"></i> View Profile</a>
+                                </li>
+                                <li>
+                                    <a href="./login.html"><i class="md md-history"></i> Logout</a>
+                                </li>
+                            </ul>
+                        </div>
+                  <ul class="main-menu">
+                     <li><a href="index.html"><i class="md md-dashboard"></i> Dashboard</a></li>
+                     <li><a href="create.html"><i class="md md-blur-on"></i> Create Contract</a></li>
+                     <li class="active"><a href="my-contracts.html"><i class="md md-receipt"></i>My Contracts</a></li>
+                     <li><a href="transactions.html"><i class="md md-settings-ethernet"></i>Transactions</a></li>
+                     <li><a href="sandbox.html"><i class="md md-settings-applications"></i>Sandbox</a></li>
+                  </ul>
+               </div>
+            </div>
+         </aside>
+         <aside id="chat">
+            <ul class="tab-nav tn-justified" role="tablist">
+               <li role="presentation" class="active"><a href="#friends" aria-controls="friends" role="tab" data-toggle="tab">Open Contracts</a></li>
+            </ul>
+            <div class="chat-search">
+               <div class="fg-line">
+                  <input type="text" class="form-control" placeholder="Search Contracts">
+               </div>
+            </div>
+            <div class="tab-content">
+               <div role="tabpanel" class="tab-pane fade in active" id="friends">
+                  <div class="listview">
+                     <a class="lv-item" href="./my-contracts.html">
+                        <div class="media">
+                           <div class="pull-left p-relative">
+                              <img class="lv-img-sm" src="img/smart_contract.png" alt="">
+                              <i class="chat-status-busy"></i>
+                           </div>
+                           <div class="media-body">
+                              <div class="lv-title">Smart Contract No.1</div>
+                              <small class="lv-small">Created</small>
+                           </div>
+                        </div>
+                     </a>
+                     <a class="lv-item" href="./my-contracts.html">
+                        <div class="media">
+                           <div class="pull-left">
+                              <img class="lv-img-sm" src="img/smart_contract.png" alt="">
+                           </div>
+                           <div class="media-body">
+                              <div class="lv-title">Smart Contract No.2</div>
+                              <small class="lv-small">Waiting</small>
+                           </div>
+                        </div>
+                     </a>
+                     <a class="lv-item" href="./my-contracts.html">
+                        <div class="media">
+                           <div class="pull-left p-relative">
+                              <img class="lv-img-sm" src="img/generic_contract.png" alt="">
+                              <i class="chat-status-online"></i>
+                           </div>
+                           <div class="media-body">
+                              <div class="lv-title">Generic Contract No.1</div>
+                              <small class="lv-small">Ready</small>
+                           </div>
+                        </div>
+                     </a>
+                     <a class="lv-item" href="./my-contracts.html">
+                        <div class="media">
+                           <div class="pull-left p-relative">
+                              <img class="lv-img-sm" src="img/smart_contract.png" alt="">
+                              <i class="chat-status-online"></i>
+                           </div>
+                           <div class="media-body">
+                              <div class="lv-title">Smart Contract No.3</div>
+                              <small class="lv-small">Ready</small>
+                           </div>
+                        </div>
+                     </a>
+                     <a class="lv-item" href="./my-contracts.html">
+                        <div class="media">
+                           <div class="pull-left">
+                              <img class="lv-img-sm" src="img/generic_contract.png" alt="">
+                           </div>
+                           <div class="media-body">
+                              <div class="lv-title">Generic Contract No.2</div>
+                              <small class="lv-small">Waiting</small>
+                           </div>
+                        </div>
+                     </a>
+                     <a class="lv-item" href="./my-contracts.html">
+                        <div class="media">
+                           <div class="pull-left">
+                              <img class="lv-img-sm" src="img/smart_contract.png" alt="">
+                           </div>
+                           <div class="media-body">
+                              <div class="lv-title">Smart Contract No.4</div>
+                              <small class="lv-small">Waiting</small>
+                           </div>
+                        </div>
+                     </a>
+                     <a class="lv-item" href="./my-contracts.html">
+                        <div class="media">
+                           <div class="pull-left p-relative">
+                              <img class="lv-img-sm" src="img/smart_contract.png" alt="">
+                              <i class="chat-status-busy"></i>
+                           </div>
+                           <div class="media-body">
+                              <div class="lv-title">Smart Contract No.5</div>
+                              <small class="lv-small">Created</small>
+                           </div>
+                        </div>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </aside>
+         <section id="content">
+            <div class="container">
+               <div class="block-header">
+                  <h2>Contact Details</h2>
+               </div>
+              
+               <div class="card">
+                        <div class="card-header">
+                            <h2>Contract :  <small>10847FJS048FJS</small></h2>
+                        
+                            <ul class="actions">
+                                <li class="dropdown action-show">
+                                    <a href="" data-toggle="dropdown">
+                                        <i class="md md-more-vert"></i>
+                                    </a>
+                    
+                                    <div class="dropdown-menu pull-right">
+                                        <a href="./my-contracts.html">
+                                        <p class="p-20">
+                                            Back
+                                        </p>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="card-body card-padding">
+                            
+                              <div class="col-sm-6">
+                                 <p class="c-black f-500 m-b-20">Currency</p>
+                                 <div class="form-group">
+                                    <div class="fg-line">
+                                       <div class="select">
+                                          <select class="form-control">
+                                             <option>Namecoin</option>
+                                             <option>Ethereum</option>
+                                             <option>Bitcoin</option>
+                                             <option>Counterparty</option>
+                                          </select>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-sm-6">
+                                 <p class="c-black f-500 m-b-20">Contract Type</p>
+                                 <div class="form-group">
+                                    <div class="fg-line">
+                                       <div class="select">
+                                          <select class="form-control">
+                                             <option>Smart Contract</option>
+                                             <option>Generic Contract</option>
+                                          </select>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <br>
+                              <hr>
+                              <br>
+                              <div class="row">
+                                 <hr>
+                                 <div class="col-sm-6">
+                                    <div class="input-group">
+                                       <span class="input-group-addon"><i class="md md-person"></i></span>
+                                       <div class="fg-line">
+                                          <input type="text" class="form-control" placeholder="Reiner Wulfcastle">
+                                       </div>
+                                    </div>
+                                    <br>
+                                    <div class="input-group">
+                                       <span class="input-group-addon"><i class="md md-local-phone"></i></span>
+                                       <div class="fg-line">
+                                          <input type="text" class="form-control" placeholder="+ 1 113 058 4857">
+                                       </div>
+                                    </div>
+                                    <br>
+                                    <div class="input-group">
+                                       <span class="input-group-addon"><i class="md md-email"></i></span>
+                                       <div class="fg-line">
+                                          <input type="text" class="form-control" placeholder="reiner.wulfcastle@gmail.com">
+                                       </div>
+                                    </div>
+                                    <br>
+                                    <div class="input-group">
+                                       <span class="input-group-addon"><i class="md md-location-on"></i></span>
+                                       <div class="fg-line">    
+                                          <input type="text" class="form-control" placeholder="Skype : Wulfcastle">
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="col-sm-6">
+
+                                    <div class="input-group">
+                                       <div class="fg-line">
+                                          <input type="text" class="form-control" placeholder="Variables : [n+100]">
+                                       </div>
+                                       <span class="input-group-addon last"><i class="md md-select-all"></i></span>
+                                    </div>
+                                    <br>
+                                    <div class="input-group">
+                                       <div class="fg-line">
+                                          <input type="text" class="form-control" placeholder="Reputation : +100/-7">
+                                       </div>
+                                       <span class="input-group-addon last"><i class="md md-account-box"></i></span>
+                                    </div>
+                                    <br>
+                                    <div class="input-group">
+                                       <div class="fg-line">    
+                                          <input type="text" class="form-control" placeholder="Completion Date : 27 July 2015">
+                                       </div>
+                                       <span class="input-group-addon last"><i class="md md-my-location"></i></span>
+                                    </div>
+                                 </div>
+                              </div>
+                            <br>
+                            <hr>
+                            <br>
+                              <div class="form-group has-success has-feedback">
+                                 <label class="control-label" for="inputSuccess2">Amount</label>
+                                 <div class="fg-line">
+                                    <input type="text" class="form-control" id="inputSuccess2" placeholder="947 438 Ether">
+                                 </div>
+                              </div>
+                              <div class="form-group has-warning has-feedback">
+                                 <label class="control-label" for="inputWarning2">Fees</label>
+                                 <div class="fg-line">
+                                    <input type="text" class="form-control" id="inputWarning2" placeholder="340 Ether">
+                                 </div>
+                              </div>
+                              <div class="form-group has-error has-feedback">
+                                 <label class="control-label" for="inputError2">Variables</label>
+                                 <div class="fg-line">
+                                    <input type="text" class="form-control" id="inputError2" placeholder="[n+100]/[n-50]">
+                                 </div>
+                              </div>
+                              <br>
+                              <div class="has-success">
+                                 <div class="checkbox">
+                                    <label>
+                                    <input type="checkbox" value="" checked data-toggle="toggle">
+                                    <i class="input-helper"></i>
+                                    v2.5 Contract
+                                    </label>
+                                 </div>
+                              </div>
+                              <div class="has-error">
+                                 <div class="checkbox">
+                                    <label>
+                                    <input type="checkbox" value="">
+                                    <i class="input-helper"></i>
+                                    v1 Contract
+                                    </label>
+                                 </div>
+                              </div>
+                              <br>
+                              <hr>
+                              <br>
+                              <div class="row">
+                                 <div class="col-sm-4 m-b-20">
+                                    <div class="toggle-switch" data-ts-color="red">
+                                       <label for="ts2" class="ts-label" >Node 1</label>
+                                       <input id="ts2" type="checkbox" hidden="hidden" checked data-toggle="toggle">
+                                       <label for="ts2" class="ts-helper"></label>
+                                    </div>
+                                 </div>
+                                 <div class="col-sm-4 m-b-20">
+                                    <div class="toggle-switch" data-ts-color="blue">
+                                       <label for="ts3" class="ts-label">Node 2</label>
+                                       <input id="ts3" type="checkbox" hidden="hidden" checked data-toggle="toggle">
+                                       <label for="ts3" class="ts-helper"></label>
+                                    </div>
+                                 </div>
+                                 <div class="col-sm-4 m-b-20">
+                                    <div class="toggle-switch" data-ts-color="green">
+                                       <label for="ts4" class="ts-label">Node 3</label>
+                                       <input id="ts4" type="checkbox" hidden="hidden">
+                                       <label for="ts4" class="ts-helper"></label>
+                                    </div>
+                                 </div>
+                              </div>
+                            <br>
+                              <hr>
+                              <br>
+                            <div class="row">
+                                 <div class="col-sm-4 m-b-20">
+                                    
+                                 </div>
+                                 <div class="col-sm-6 m-b-20">
+                                    
+                                 </div>
+                                 <div class="col-sm-2 m-b-20">
+                                    <a href="my-contracts.html"><button class="btn bgm-bluegray waves-effect">Cancel</button></a>
+                                    <a href="my-contracts.html"><button class="btn bgm-bluegray waves-effect">Save Changes</button></a>
+                                 </div>
+                              </div>
+                    
+                          
+                        </div>
+                    </div>
+            </div>
+         </section>
+      </section>
+      <!-- Older IE warning message -->
+      <!--[if lt IE 9]>
+      <div class="ie-warning">
+         <h1 class="c-white">IE SUCKS!</h1>
+         <p>You are using an outdated version of Internet Explorer, upgrade to any of the following web browser <br/>in order to access the maximum functionality of this website. </p>
+         <ul class="iew-download">
+            <li>
+               <a href="http://www.google.com/chrome/">
+                  <img src="img/browsers/chrome.png" alt="">
+                  <div>Chrome</div>
+               </a>
+            </li>
+            <li>
+               <a href="https://www.mozilla.org/en-US/firefox/new/">
+                  <img src="img/browsers/firefox.png" alt="">
+                  <div>Firefox</div>
+               </a>
+            </li>
+            <li>
+               <a href="http://www.opera.com">
+                  <img src="img/browsers/opera.png" alt="">
+                  <div>Opera</div>
+               </a>
+            </li>
+            <li>
+               <a href="https://www.apple.com/safari/">
+                  <img src="img/browsers/safari.png" alt="">
+                  <div>Safari</div>
+               </a>
+            </li>
+            <li>
+               <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie">
+                  <img src="img/browsers/ie.png" alt="">
+                  <div>IE (New)</div>
+               </a>
+            </li>
+         </ul>
+         <p>Upgrade your browser for a Safer and Faster web experience. <br/>Thank you for your patience...</p>
+      </div>
+      <![endif]-->
+      <!-- Javascript Libraries -->
+      <script src="js/jquery-2.1.1.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="vendors/nicescroll/jquery.nicescroll.min.js"></script>
+      <script src="vendors/waves/waves.min.js"></script>
+      <script src="vendors/bootstrap-growl/bootstrap-growl.min.js"></script>
+      <script src="vendors/bootstrap-wizard/jquery.bootstrap.wizard.min.js"></script>
+      <script src="vendors/sweet-alert/sweet-alert.min.js"></script>
+      <script src="js/functions.js"></script>
+      <!-- Following is only for demo purpose to trigger colored modals. You may ignore this when you implement -->
+      <script type="text/javascript">
+         $(document).ready(function(){
+             $('body').on('click', '#btn-color-targets > .btn', function(){
+                 var color = $(this).data('target-color');
+                 $('#modalColor').attr('data-modal-color', color);
+             });
+         });
+      </script>
+   </body>
+</html>
