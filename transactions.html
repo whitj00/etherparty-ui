@@ -166,6 +166,8 @@
          </aside>
          <section id="content">
             <div class="container">
+                
+
                <div class="card">
                   <div class="card-header">
                      <h2>Transactions <small>All transactions assosciated with your account.</small></h2>
@@ -375,8 +377,7 @@
                  },
                  formatters: {
                      "commands": function(column, row) {
-                         return "<button type=\"button\" class=\"btn btn-icon command-edit\" data-row-id=\"" + row.id + "\"><span class=\"md md-edit\"></span></button> " + 
-                             "<button type=\"button\" class=\"btn btn-icon command-delete\" data-row-id=\"" + row.id + "\"><span class=\"md md-delete\"></span></button>";
+                         return "<button type=\"button\" class=\"btn btn-icon command-edit\" data-row-id=\"" + row.id + "\"><span class=\"md md-view-headline\"></span></button> " ;
                      }
                  }
              });
