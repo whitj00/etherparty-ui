@@ -8,10 +8,10 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <title>Etherparty</title>
       <!-- Vendor CSS -->
-      <link href="vendors/animate-css/animate.min.css" rel="stylesheet">
+      <link href="../vendors/animate-css/animate.min.css" rel="stylesheet">
        <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
       <!-- CSS -->
-      <link href="css/app.min.css" rel="stylesheet">
+      <link href="../css/app.min.css" rel="stylesheet">
       <!-- Following CSS codes are used only fore demo purposes thus you can remove anytime -->
       <style type="text/css">
          .dropdown-basic-demo {
@@ -59,7 +59,7 @@
                </div>
             </li>
             <li class="logo hidden-xs">
-               <img src="img/logo.png">
+               <img src="../img/logo.png">
             </li>
             <li class="pull-right">
                <ul class="top-menu">
@@ -105,19 +105,19 @@
                             
                             <ul class="main-menu">
                                 <li>
-                                    <a href="profile.html"><i class="md md-person"></i> View Profile</a>
+                                    <a href="../profile.html"><i class="md md-person" class="active"></i> View Profile</a>
                                 </li>
                                 <li>
-                                    <a href="./login.html"><i class="md md-history"></i> Logout</a>
+                                    <a href="../login.html"><i class="md md-history"></i> Logout</a>
                                 </li>
                             </ul>
                         </div>
                   <ul class="main-menu">
-                     <li><a href="index.html"><i class="md md-dashboard"></i> Dashboard</a></li>
-                     <li><a href="create.html"><i class="md md-blur-on"></i> Create Contract</a></li>
-                     <li class="active"><a href="my-contracts.html"><i class="md md-receipt"></i>My Contracts</a></li>
-                     <li><a href="transactions.html"><i class="md md-settings-ethernet"></i>Transactions</a></li>
-                     <li><a href="sandbox.html"><i class="md md-settings-applications"></i>Sandbox</a></li>
+                     <li><a href="../index.html"><i class="md md-dashboard"></i> Dashboard</a></li>
+                     <li><a href="../create.html"><i class="md md-blur-on"></i> Create Contract</a></li>
+                     <li><a href="../my-contracts.html"><i class="md md-receipt"></i>My Contracts</a></li>
+                     <li><a href="../transactions.html"><i class="md md-settings-ethernet"></i>Transactions</a></li>
+                     <li><a href="../sandbox.html"><i class="md md-settings-applications"></i>Sandbox</a></li>
                   </ul>
                </div>
             </div>
@@ -137,7 +137,7 @@
                      <a class="lv-item" href="./my-contracts.html">
                         <div class="media">
                            <div class="pull-left p-relative">
-                              <img class="lv-img-sm" src="img/smart_contract.png" alt="">
+                              <img class="lv-img-sm" src="../img/smart_contract.png" alt="">
                               <i class="chat-status-busy"></i>
                            </div>
                            <div class="media-body">
@@ -149,7 +149,7 @@
                      <a class="lv-item" href="./my-contracts.html">
                         <div class="media">
                            <div class="pull-left">
-                              <img class="lv-img-sm" src="img/smart_contract.png" alt="">
+                              <img class="lv-img-sm" src="../img/smart_contract.png" alt="">
                            </div>
                            <div class="media-body">
                               <div class="lv-title">Smart Contract No.2</div>
@@ -160,7 +160,7 @@
                      <a class="lv-item" href="./my-contracts.html">
                         <div class="media">
                            <div class="pull-left p-relative">
-                              <img class="lv-img-sm" src="img/generic_contract.png" alt="">
+                              <img class="lv-img-sm" src="../img/generic_contract.png" alt="">
                               <i class="chat-status-online"></i>
                            </div>
                            <div class="media-body">
@@ -172,7 +172,7 @@
                      <a class="lv-item" href="./my-contracts.html">
                         <div class="media">
                            <div class="pull-left p-relative">
-                              <img class="lv-img-sm" src="img/smart_contract.png" alt="">
+                              <img class="lv-img-sm" src="../img/smart_contract.png" alt="">
                               <i class="chat-status-online"></i>
                            </div>
                            <div class="media-body">
@@ -184,7 +184,7 @@
                      <a class="lv-item" href="./my-contracts.html">
                         <div class="media">
                            <div class="pull-left">
-                              <img class="lv-img-sm" src="img/generic_contract.png" alt="">
+                              <img class="lv-img-sm" src="../img/generic_contract.png" alt="">
                            </div>
                            <div class="media-body">
                               <div class="lv-title">Generic Contract No.2</div>
@@ -195,7 +195,7 @@
                      <a class="lv-item" href="./my-contracts.html">
                         <div class="media">
                            <div class="pull-left">
-                              <img class="lv-img-sm" src="img/smart_contract.png" alt="">
+                              <img class="lv-img-sm" src="../img/smart_contract.png" alt="">
                            </div>
                            <div class="media-body">
                               <div class="lv-title">Smart Contract No.4</div>
@@ -206,7 +206,7 @@
                      <a class="lv-item" href="./my-contracts.html">
                         <div class="media">
                            <div class="pull-left p-relative">
-                              <img class="lv-img-sm" src="img/smart_contract.png" alt="">
+                              <img class="lv-img-sm" src="../img/smart_contract.png" alt="">
                               <i class="chat-status-busy"></i>
                            </div>
                            <div class="media-body">
@@ -222,65 +222,95 @@
          <section id="content">
             <div class="container">
                <div class="block-header">
-                  <h2>Contact Details</h2>
+                  <h2>My Profile</h2>
                </div>
-              
-               <div class="card">
-                        <div class="card-header">
-                            <h2>Contract :  <small>10847FJS048FJS</small></h2>
+               
+              <div class="card m-b-0" id="messages-main">
+
                         
-                            <ul class="actions">
-                                <li class="dropdown action-show">
-                                    <a href="" data-toggle="dropdown">
-                                        <i class="md md-more-vert"></i>
-                                    </a>
-                    
-                                    <div class="dropdown-menu pull-right">
-                                        <a href="./my-contracts.html">
-                                        <p class="p-20">
-                                            Back
-                                        </p>
-                                        </a>
+                        <div class="ms-menu">
+                            <div class="ms-block">
+                                <div class="ms-user">
+                                    <img src="../img/profile.png" alt="">
+                                    <div>Signed in as <br> reiner.wulfcastle@gmail.com</div>
+                                </div>
+                            </div>
+                            
+                          
+                            
+                            <div class="listview lv-user m-t-20">
+                               <a href="../profile.html"> <div class="lv-item media">
+                                    
+                                    <div class="lv-avatar bgm-blue pull-left">
+                                        s
                                     </div>
-                                </li>
-                            </ul>
+                                    
+                                    <div class="media-body">
+                                        <div class="lv-title">Settings</div>
+                                        <div class="lv-small">Account Setting</div>
+                                    </div>
+                                </div>
+                                   </a>
+                                
+                                <a href="./data.html">
+                                <div class="lv-item media">
+                                    <div class="lv-avatar bgm-red pull-left">d</div>
+                                    <div class="media-body">
+                                        <div class="lv-title">Data</div>
+                                        <div class="lv-small">Data Settings </div>
+                                    </div>
+                                </div>
+                                    </a>
+                                
+                                 <a href="./currency.html">
+                                <div class="lv-item media">
+                                    <div class="lv-avatar bgm-green pull-left">c</div>
+                                    <div class="media-body">
+                                        <div class="lv-title">Currency</div>
+                                        <div class="lv-small">Choose Default Currency</div>
+                                    </div>
+                                </div>
+                                </a>
+                                
+                            
+                                <div class="lv-item media active">
+                                    <div class="lv-avatar pull-left">
+                                        <div class="lv-avatar bgm-orange pull-left">u</div>
+                                    </div>
+                                    <div class="media-body">
+                                        <div class="lv-title">User Interface </div>
+                                        <div class="lv-small">Phasellus porttitor tellus nec</div>
+                                    </div>
+                                </div>
+                               
+                            </div>
+
+                            
                         </div>
                         
-                        <div class="card-body card-padding">
-                            
-                              <div class="col-sm-6">
-                                 <p class="c-black f-500 m-b-20">Currency</p>
-                                 <div class="form-group">
-                                    <div class="fg-line">
-                                       <div class="select">
-                                          <select class="form-control">
-                                             <option>Namecoin</option>
-                                             <option>Ethereum</option>
-                                             <option>Bitcoin</option>
-                                             <option>Counterparty</option>
-                                          </select>
-                                       </div>
+                        <div class="ms-body">
+                            <div class="listview lv-message">
+                                <div class="lv-header-alt bgm-white">
+                                    <div id="ms-menu-trigger">
+                                        <div class="line-wrap">
+                                            <div class="line top"></div>
+                                            <div class="line center"></div>
+                                            <div class="line bottom"></div>
+                                        </div>
                                     </div>
-                                 </div>
-                              </div>
-                              <div class="col-sm-6">
-                                 <p class="c-black f-500 m-b-20">Contract Type</p>
-                                 <div class="form-group">
-                                    <div class="fg-line">
-                                       <div class="select">
-                                          <select class="form-control">
-                                             <option>Smart Contract</option>
-                                             <option>Generic Contract</option>
-                                          </select>
-                                       </div>
+
+                                    <div class="lvh-label hidden-xs">
+                                        
+                                        <span class="c-black">Settings</span>
                                     </div>
-                                 </div>
-                              </div>
-                              <br>
-                              <hr>
-                              <br>
-                              <div class="row">
-                                 <hr>
+                                    
+                                    
+                                </div>
+                                
+                                <div class="lv-body" style="
+    min-height: 500px;
+">   <div class="row" style="padding:15px;"> 
+                                
                                  <div class="col-sm-6">
                                     <div class="input-group">
                                        <span class="input-group-addon"><i class="md md-person"></i></span>
@@ -333,90 +363,19 @@
                                        <span class="input-group-addon last"><i class="md md-my-location"></i></span>
                                     </div>
                                  </div>
-                              </div>
-                            <br>
-                            <hr>
-                            <br>
-                              <div class="form-group has-success has-feedback">
-                                 <label class="control-label" for="inputSuccess2">Amount</label>
-                                 <div class="fg-line">
-                                    <input type="text" class="form-control" id="inputSuccess2" placeholder="947 438 Ether">
-                                 </div>
-                              </div>
-                              <div class="form-group has-warning has-feedback">
-                                 <label class="control-label" for="inputWarning2">Fees</label>
-                                 <div class="fg-line">
-                                    <input type="text" class="form-control" id="inputWarning2" placeholder="340 Ether">
-                                 </div>
-                              </div>
-                              <div class="form-group has-error has-feedback">
-                                 <label class="control-label" for="inputError2">Variables</label>
-                                 <div class="fg-line">
-                                    <input type="text" class="form-control" id="inputError2" placeholder="[n+100]/[n-50]">
-                                 </div>
-                              </div>
-                              <br>
-                              <div class="has-success">
-                                 <div class="checkbox">
-                                    <label>
-                                    <input type="checkbox" value="" checked data-toggle="toggle">
-                                    <i class="input-helper"></i>
-                                    v2.5 Contract
-                                    </label>
-                                 </div>
-                              </div>
-                              <div class="has-error">
-                                 <div class="checkbox">
-                                    <label>
-                                    <input type="checkbox" value="">
-                                    <i class="input-helper"></i>
-                                    v1 Contract
-                                    </label>
-                                 </div>
-                              </div>
-                              <br>
-                              <hr>
-                              <br>
-                              <div class="row">
-                                 <div class="col-sm-4 m-b-20">
-                                    <div class="toggle-switch" data-ts-color="red">
-                                       <label for="ts2" class="ts-label" >Node 1</label>
-                                       <input id="ts2" type="checkbox" hidden="hidden" checked data-toggle="toggle">
-                                       <label for="ts2" class="ts-helper"></label>
-                                    </div>
-                                 </div>
-                                 <div class="col-sm-4 m-b-20">
-                                    <div class="toggle-switch" data-ts-color="blue">
-                                       <label for="ts3" class="ts-label">Node 2</label>
-                                       <input id="ts3" type="checkbox" hidden="hidden" checked data-toggle="toggle">
-                                       <label for="ts3" class="ts-helper"></label>
-                                    </div>
-                                 </div>
-                                 <div class="col-sm-4 m-b-20">
-                                    <div class="toggle-switch" data-ts-color="green">
-                                       <label for="ts4" class="ts-label">Node 3</label>
-                                       <input id="ts4" type="checkbox" hidden="hidden">
-                                       <label for="ts4" class="ts-helper"></label>
-                                    </div>
-                                 </div>
-                              </div>
-                            <br>
-                              <hr>
-                              <br>
-                            <div class="row">
-                                 <div class="col-sm-4 m-b-20">
+                              </div>                                
+   
                                     
-                                 </div>
-                                 <div class="col-sm-6 m-b-20">
                                     
-                                 </div>
-                                 <div class="col-sm-2 m-b-20">
-                                    <a href="my-contracts.html"><button class="btn bgm-bluegray waves-effect">Cancel</button></a>
-                                    <a href="my-contracts.html"><button class="btn bgm-bluegray waves-effect">Save Changes</button></a>
-                                 </div>
-                              </div>
-                    
-                          
+                                    
+                                    
+                                    
+                                    
+                                    
+                                </div>
+                                
+                                
+                            </div>
                         </div>
                     </div>
             </div>
@@ -463,14 +422,14 @@
       </div>
       <![endif]-->
       <!-- Javascript Libraries -->
-      <script src="js/jquery-2.1.1.min.js"></script>
-      <script src="js/bootstrap.min.js"></script>
-      <script src="vendors/nicescroll/jquery.nicescroll.min.js"></script>
-      <script src="vendors/waves/waves.min.js"></script>
-      <script src="vendors/bootstrap-growl/bootstrap-growl.min.js"></script>
-      <script src="vendors/bootstrap-wizard/jquery.bootstrap.wizard.min.js"></script>
-      <script src="vendors/sweet-alert/sweet-alert.min.js"></script>
-      <script src="js/functions.js"></script>
+      <script src="../js/jquery-2.1.1.min.js"></script>
+      <script src="../js/bootstrap.min.js"></script>
+      <script src="../vendors/nicescroll/jquery.nicescroll.min.js"></script>
+      <script src="../vendors/waves/waves.min.js"></script>
+      <script src="../vendors/bootstrap-growl/bootstrap-growl.min.js"></script>
+      <script src="../vendors/bootstrap-wizard/jquery.bootstrap.wizard.min.js"></script>
+      <script src="../vendors/sweet-alert/sweet-alert.min.js"></script>
+      <script src="../js/functions.js"></script>
       <!-- Following is only for demo purpose to trigger colored modals. You may ignore this when you implement -->
       <script type="text/javascript">
          $(document).ready(function(){
