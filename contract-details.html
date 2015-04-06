@@ -248,153 +248,76 @@
                         
                         <div class="card-body card-padding">
                             
-                              <div class="col-sm-6">
-                                 <p class="c-black f-500 m-b-20">Currency</p>
-                                 <div class="form-group">
-                                    <div class="fg-line">
-                                       <div class="select">
-                                          <select class="form-control">
-                                             <option>Namecoin</option>
-                                             <option>Ethereum</option>
-                                             <option>Bitcoin</option>
-                                             <option>Counterparty</option>
-                                          </select>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                              <div class="col-sm-6">
-                                 <p class="c-black f-500 m-b-20">Contract Type</p>
-                                 <div class="form-group">
-                                    <div class="fg-line">
-                                       <div class="select">
-                                          <select class="form-control">
-                                             <option>Smart Contract</option>
-                                             <option>Generic Contract</option>
-                                          </select>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                              <br>
-                              <hr>
                               <br>
                               <div class="row">
-                                 <hr>
-                                 <div class="col-sm-6">
+                                 <div class="col-sm-7">
                                     <div class="input-group">
                                        <span class="input-group-addon"><i class="md md-person"></i></span>
                                        <div class="fg-line">
-                                          <input type="text" class="form-control" placeholder="Reiner Wulfcastle">
+                                          <input type="text" class="form-control" placeholder="Lottery Contract w/ Alice & Bob" disabled>
                                        </div>
                                     </div>
                                     <br>
                                     <div class="input-group">
                                        <span class="input-group-addon"><i class="md md-local-phone"></i></span>
                                        <div class="fg-line">
-                                          <input type="text" class="form-control" placeholder="+ 1 113 058 4857">
-                                       </div>
-                                    </div>
-                                    <br>
-                                    <div class="input-group">
-                                       <span class="input-group-addon"><i class="md md-email"></i></span>
-                                       <div class="fg-line">
-                                          <input type="text" class="form-control" placeholder="reiner.wulfcastle@gmail.com">
+                                          <input type="text" class="form-control" placeholder="LOTTO" disabled>
                                        </div>
                                     </div>
                                     <br>
                                     <div class="input-group">
                                        <span class="input-group-addon"><i class="md md-location-on"></i></span>
                                        <div class="fg-line">    
-                                          <input type="text" class="form-control" placeholder="Skype : Wulfcastle">
+                                          <input type="text" class="form-control" placeholder="10847FJS048FJS" disabled>
                                        </div>
                                     </div>
                                  </div>
-                                 <div class="col-sm-6">
+                                 <div class="col-sm-5">
+                      <textarea rows="8" cols="150" style="width: 100%; height: auto;" disabled>
+// Namecoin
 
-                                    <div class="input-group">
-                                       <div class="fg-line">
-                                          <input type="text" class="form-control" placeholder="Variables : [n+100]">
-                                       </div>
-                                       <span class="input-group-addon last"><i class="md md-select-all"></i></span>
-                                    </div>
-                                    <br>
-                                    <div class="input-group">
-                                       <div class="fg-line">
-                                          <input type="text" class="form-control" placeholder="Reputation : +100/-7">
-                                       </div>
-                                       <span class="input-group-addon last"><i class="md md-account-box"></i></span>
-                                    </div>
-                                    <br>
-                                    <div class="input-group">
-                                       <div class="fg-line">    
-                                          <input type="text" class="form-control" placeholder="Completion Date : 27 July 2015">
-                                       </div>
-                                       <span class="input-group-addon last"><i class="md md-my-location"></i></span>
-                                    </div>
+if !contract.storage[msg.data[0]]: # Is the key not yet taken?
+    # Then take it!
+    contract.storage[msg.data[0]] = msg.data[1]
+    return(1)
+else:
+    return(0) // Otherwise do nothing</textarea>
                                  </div>
-                              </div>
-                            <br>
+                              </div>                            <br>
                             <hr>
                             <br>
                               <div class="form-group has-success has-feedback">
                                  <label class="control-label" for="inputSuccess2">Amount</label>
                                  <div class="fg-line">
-                                    <input type="text" class="form-control" id="inputSuccess2" placeholder="947 438 Ether">
+                                    <input type="text" class="form-control" id="inputSuccess2" placeholder="947 438 Ether" disabled>
                                  </div>
                               </div>
                               <div class="form-group has-warning has-feedback">
                                  <label class="control-label" for="inputWarning2">Fees</label>
                                  <div class="fg-line">
-                                    <input type="text" class="form-control" id="inputWarning2" placeholder="340 Ether">
+                                    <input type="text" class="form-control" id="inputWarning2" placeholder="340 Ether" disabled>
                                  </div>
                               </div>
-                              <div class="form-group has-error has-feedback">
-                                 <label class="control-label" for="inputError2">Variables</label>
-                                 <div class="fg-line">
-                                    <input type="text" class="form-control" id="inputError2" placeholder="[n+100]/[n-50]">
-                                 </div>
-                              </div>
-                              <br>
-                              <div class="has-success">
-                                 <div class="checkbox">
-                                    <label>
-                                    <input type="checkbox" value="" checked data-toggle="toggle">
-                                    <i class="input-helper"></i>
-                                    v2.5 Contract
-                                    </label>
-                                 </div>
-                              </div>
-                              <div class="has-error">
-                                 <div class="checkbox">
-                                    <label>
-                                    <input type="checkbox" value="">
-                                    <i class="input-helper"></i>
-                                    v1 Contract
-                                    </label>
-                                 </div>
-                              </div>
-                              <br>
                               <hr>
                               <br>
                               <div class="row">
                                  <div class="col-sm-4 m-b-20">
                                     <div class="toggle-switch" data-ts-color="red">
-                                       <label for="ts2" class="ts-label" >Node 1</label>
+                                       <label for="ts2" class="ts-label" >Main Net</label>
                                        <input id="ts2" type="checkbox" hidden="hidden" checked data-toggle="toggle">
                                        <label for="ts2" class="ts-helper"></label>
                                     </div>
                                  </div>
                                  <div class="col-sm-4 m-b-20">
                                     <div class="toggle-switch" data-ts-color="blue">
-                                       <label for="ts3" class="ts-label">Node 2</label>
+                                       <label for="ts3" class="ts-label">Test Net</label>
                                        <input id="ts3" type="checkbox" hidden="hidden" checked data-toggle="toggle">
                                        <label for="ts3" class="ts-helper"></label>
                                     </div>
                                  </div>
                                  <div class="col-sm-4 m-b-20">
                                     <div class="toggle-switch" data-ts-color="green">
-                                       <label for="ts4" class="ts-label">Node 3</label>
+                                       <label for="ts4" class="ts-label">Storj Backup</label>
                                        <input id="ts4" type="checkbox" hidden="hidden">
                                        <label for="ts4" class="ts-helper"></label>
                                     </div>
